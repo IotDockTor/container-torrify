@@ -18,7 +18,7 @@ setup(
 
     include_package_data=True,
 
-    url='http://github.com/abhinavbiswas/docker-tor-hidden-service',
+    url='https://github.com/IotDockTor/container-torrify',
 
     classifiers=[
         "Programming Language :: Python",
