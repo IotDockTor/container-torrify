@@ -1,0 +1,11 @@
+# docker-compose.yml example
+
+tor:
+  image: iotdocktor/container-torrify
+  links:
+    - hello_world_torrified_container
+
+hello_world_torrified_container:
+  image: kitematic/hello-world-nginx
+  hostname: hello_world_container 
+
