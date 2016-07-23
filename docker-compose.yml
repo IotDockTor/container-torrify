@@ -1,11 +1,16 @@
-# docker-compose.yml example
-
-tor:
+helloworldtorrifiedcontainer:
+  tty: true
   image: iotdocktor/container-torrify
+  hostname: helloworldtorrifiedcontainer
   links:
-    - hello_world_torrified_container
+    - helloworldcontainer:helloworldcontainer
+  stdin_open: true
 
-hello_world_torrified_container:
+helloworldcontainer:
+  tty: true
   image: kitematic/hello-world-nginx
-  hostname: hello_world_container 
+  hostname: helloworldcontainer
+  ports: 
+    - 80:80
+  stdin_open: true
 
