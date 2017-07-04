@@ -1,16 +1,15 @@
-helloworldtorrifiedcontainer:
-  tty: true
-  image: iotdocktor/container-torrify
-  hostname: helloworldtorrifiedcontainer
-  links:
-    - helloworldcontainer:helloworldcontainer
-  stdin_open: true
+version: '2'
 
-helloworldcontainer:
-  tty: true
-  image: kitematic/hello-world-nginx
-  hostname: helloworldcontainer
-  ports: 
-    - 80:80
-  stdin_open: true
+services:
+    helloworldtorrifiedcontainer:
+        image: iotdocktor/container-torrify
+        hostname: helloworldtorrifiedcontainer
+        links:
+            - helloworldcontainer:helloworldcontainer
+
+    helloworldcontainer:
+        image: kitematic/hello-world-nginx
+        hostname: helloworldcontainer
+        ports: 
+            - 80:80
 

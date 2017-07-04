@@ -32,11 +32,11 @@ A command line tool `onions` is available in container to get `.onion` url when 
 
 ```sh
 # Get services
-$ docker exec -ti torhiddenproxy_tor_1 onions
+$ docker exec -ti hello_world_torrified_container onions
 
 
 # Get json
-$ docker exec -ti torhiddenproxy_tor_1 onions --json
+$ docker exec -ti hello_world_torrified_container onions --json
 
 ```
 
